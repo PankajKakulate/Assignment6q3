@@ -6,8 +6,13 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  
+  styleUrl: './app.component.css',
+  template: `
+    <h1 [class]="'customCssClass'">Marvellous Infosystems</h1>
+    <input [class]="'customCssClass'">
+    <h1 style="color: blue;">Pankaj Keda Kakulate's Inline CSS in ts file </h1>
+  `
 })
 export class AppComponent {
   title = 'Assignment6q3';
